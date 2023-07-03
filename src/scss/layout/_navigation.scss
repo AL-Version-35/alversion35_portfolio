@@ -1,0 +1,96 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 3vw;
+
+    img {
+        display: flex;
+        align-content: center;
+        padding-top: 3vh;
+        height: 7.5em;
+        width: 8.5em;
+    }
+}
+
+.navbar {
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin-top: 1em;
+
+        li {
+            display: flex;
+            align-items: center;
+            margin-inline: 1vw;
+            height: 2em;
+            transition: background-color 0.5s ease;
+            border-radius: 20px;
+
+            @include breakpoint(phone-only) {
+                padding-inline: 1vw;
+                font-size: 1em;
+            }
+
+            @include breakpoint(phone-up) {
+                padding-inline: 1.25vw;
+                font-size: 1.1em;
+            }
+
+            @include breakpoint(tablet-up) {
+                padding-inline: 1.5vw;
+                font-size: 1.15em;
+            }
+
+            @include breakpoint(laptop-up) {
+                padding-inline: 1.75vw;
+                font-size: 1.2em;
+            }
+
+            @include breakpoint(desktop-up) {
+                padding-inline: 2vw;
+                font-size: 1.25em;
+            }
+        }
+    }
+}
+
+.navbar-button,
+.redirect-button {
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.navbar-button {
+    &:hover {
+        background-color: $primary;
+
+        a {
+            color: $tertiary;
+        }
+    }
+
+    a {
+        color: $primary;
+    }
+}
+
+.redirect-button {
+    background-color: $primary;
+
+
+    &:hover {
+        background-color: $tertiary;
+
+        a {
+            color: $primary;
+        }
+    }
+
+    a {
+        color: $tertiary;
+    }
+
+}

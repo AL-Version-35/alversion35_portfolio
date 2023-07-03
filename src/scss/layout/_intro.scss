@@ -1,0 +1,98 @@
+.intro {
+    color: $primary;
+    height: 30em;
+
+    h3 {
+
+        @include breakpoint(phone-only) {
+            font-size: 1.2em;
+            margin-top: 8em;
+        }
+
+        @include breakpoint(phone-up) {
+            font-size: 1.25em;
+            margin-top: 9em;
+        }
+
+        @include breakpoint(tablet-up) {
+            font-size: 1.3em;
+            margin-top: 10em;
+        }
+
+        @include breakpoint(laptop-up) {
+            font-size: 1.35em;
+            margin-top: 11em;
+        }
+
+        @include breakpoint(desktop-up) {
+            font-size: 1.4em;
+            margin-top: 12em;
+        }
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 0px;
+        transform: scaleY(1.2);
+
+        @include breakpoint(phone-only) {
+            font-size: 2em;
+            transform: scaleY(1.2);
+        }
+
+        @include breakpoint(phone-up) {
+            font-size: 2.3em;
+        }
+
+        @include breakpoint(tablet-up) {
+            font-size: 2.6em;
+        }
+
+        @include breakpoint(laptop-up) {
+            font-size: 2.9em;
+        }
+
+        @include breakpoint(desktop-up) {
+            font-size: 3.2em;
+        }
+
+        span {
+            @include breakpoint(phone-only) {
+                font-size: 1.15em;
+            }
+
+            @include breakpoint(tablet-up) {
+                font-size: 1.3em;
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+
+        @include breakpoint(phone-only) {
+            font-size: 1.2em;
+            width: 70vw;
+        }
+
+        @include breakpoint(phone-up) {
+            font-size: 1.3em;
+            width: 60vw;
+        }
+
+        @include breakpoint(tablet-up) {
+            font-size: 1.4em;
+            width: 50vw;
+        }
+
+        @include breakpoint(laptop-up) {
+            font-size: 1.5em;
+            width: 40vw;
+        }
+
+        @include breakpoint(desktop-up) {
+            font-size: 1.6em;
+            width: 30vw;
+        }
+    }
+}
